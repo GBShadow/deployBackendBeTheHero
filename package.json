@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/server.js",
-    "start": "sucrase-node src/server.js",
+    "start": "node dist/server.js",
+    "build": "sucrase ./src -d ./dist --transforms imports",
     "test": "cross-env NODE_ENV=test jest"
   },
   "keywords": [],
