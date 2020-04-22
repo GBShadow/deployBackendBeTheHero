@@ -8,10 +8,6 @@ import SessionController from './controllers/SessionController';
 
 const routes = new Router();
 
-routes.get('/', function(req, res){
-  res.redirect('/sessions');
-});
-
 routes.post(
   '/sessions',
   celebrate({
